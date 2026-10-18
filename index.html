@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raya Store</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #22c55e;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            background: #22c55e;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .produk {
+            padding: 40px 8%;
+        }
+
+        .produk h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .daftar-produk {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .gambar {
+            height: 180px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .harga {
+            color: #16a34a;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        button {
+            border: none;
+            background: #22c55e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #15803d;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Raya Store</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Selamat Datang di Raya Store</h2>
+    <p>Temukan produk pilihan dengan harga terbaik.</p>
+</section>
+
+<section class="produk" id="produk">
+
+    <h2>Produk Kami</h2>
+
+    <div class="daftar-produk">
+
+        <div class="card">
+            <div class="gambar">👕</div>
+            <h3>Kaos Premium</h3>
+            <p class="harga">Rp99.000</p>
+            <button>Beli Sekarang</button>
+        </div>
+
+        <div class="card">
+            <div class="gambar">👟</div>
+            <h3>Sepatu Casual</h3>
+            <p class="harga">Rp249.000</p>
+            <button>Beli Sekarang</button>
+        </div>
+
+        <div class="card">
+            <div class="gambar">🎒</div>
+            <h3>Tas Backpack</h3>
+            <p class="harga">Rp179.000</p>
+            <button>Beli Sekarang</button>
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="kontak">
+    <p>© 2026 Raya Store | Toko Online</p>
+</footer>
+
+</body>
+</html>
